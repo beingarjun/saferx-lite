@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-100 text-slate-900">
@@ -16,9 +18,12 @@ export default function Home() {
             <a href="#contact">Contact</a>
           </div>
 
-          <button className="rounded-full bg-slate-900 px-4 py-2 text-white">
+          <Link
+            href="/login"
+            className="rounded-full bg-slate-900 px-4 py-2 text-white"
+          >
             Login
-          </button>
+          </Link>
         </nav>
       </section>
 
@@ -111,6 +116,9 @@ export default function Home() {
       <section id="about" className="bg-slate-900 py-20 text-white">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-3xl font-bold">A safer operating system for pharmacy workflows</h2>
+          <a href="/login" className="rounded-full bg-slate-900 px-4 py-2 text-white">
+             Login
+          </a>
           <p className="mt-4 max-w-2xl text-slate-300">
             SafeRx Lite gives teams a clearer path to manage prescriptions,
             incidents, and daily operations in one platform.
