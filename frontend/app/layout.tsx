@@ -12,10 +12,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteDescription =
+  "SafeRx Lite helps pharmacies track prescriptions, review incidents, and coordinate daily operations.";
+
 export const metadata: Metadata = {
   title: "SafeRx Lite",
-  description:
-    "SafeRx Lite helps pharmacies track prescriptions, review incidents, and coordinate daily operations.",
+  description: siteDescription,
+  openGraph: {
+    title: "SafeRx Lite",
+    description: siteDescription,
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
